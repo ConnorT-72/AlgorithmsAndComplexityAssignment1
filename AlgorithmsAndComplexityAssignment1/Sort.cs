@@ -1,5 +1,5 @@
 ﻿using System;
-namespace CSharpSorting
+namespace AlgorithmsAndComplexityAssignment1
 {
 	public static class Sort
 	{
