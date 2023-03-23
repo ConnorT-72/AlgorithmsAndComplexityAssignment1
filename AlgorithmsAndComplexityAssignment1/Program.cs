@@ -14,19 +14,41 @@ namespace AlgorithmsAndComplexityAssignment1
 		public static void Main(string[] args)
 		{
 
-			string[] lines = File.ReadAllLines("c:\\2981757.txt");
-			//add open with txt files
-			int[] values = new int[465];
-			Console.WriteLine("Not sorted:");
-		
+
+
+			
 			
 
 
 
 
 
-			//bubble Sorting
-			int[] bubbled = Sort.bubble(values);
+
+			string[] lines = File.ReadAllLines("c:\\2981757.txt");
+			//add open with txt files
+			int[] values = new int[10];
+			Console.WriteLine("Not sorted:");
+
+            char userKeyPress;
+            do
+            {
+                Console.WriteLine("Please input your number: ");
+                userKeyPress = Console.ReadKey().KeyChar;
+            }
+            while (values.Contains(userKeyPress));
+			if (values.Contains(userKeyPress))
+			{
+				Console.WriteLine("Found");
+			}
+			else
+				Console.WriteLine("Value not found");
+
+
+
+
+
+            //bubble Sorting
+            int[] bubbled = Sort.bubble(values);
 			Console.WriteLine("Bubble Sorted:");
 			for (int i = 0; i < bubbled.Length; i++)
 			{
@@ -46,8 +68,17 @@ namespace AlgorithmsAndComplexityAssignment1
 			{
 				Console.WriteLine(bubbled[i]);
 			}
-			
-			Console.ReadLine();
+
+
+
+            
+
+
+
+
+
+
+            Console.ReadLine();
 		}
 
 	}
