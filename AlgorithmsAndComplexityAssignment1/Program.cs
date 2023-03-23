@@ -16,17 +16,21 @@ namespace AlgorithmsAndComplexityAssignment1
 
 
 
+
+
+
+
+
+			Array theLines;
+
+
+			string[] lines = File.ReadAllLines("Road1-256.txt");
+			lines = new string[lines.Length];
+			lines = lines.ToArray();
+			theLines = new string[lines.Length];
+			Console.WriteLine(lines);
 			
-			
-
-
-
-
-
-
-			string[] lines = File.ReadAllLines("c:\\2981757.txt");
-			//add open with txt files
-			int[] values = new int[10];
+			int[] values = new int[theLines.Length];
 			Console.WriteLine("Not sorted:");
 
             char userKeyPress;
@@ -39,9 +43,12 @@ namespace AlgorithmsAndComplexityAssignment1
 			if (values.Contains(userKeyPress))
 			{
 				Console.WriteLine("Found");
+				Console.ReadLine();
 			}
 			else
-				Console.WriteLine("Value not found");
+				Console.WriteLine("" +
+					"Value not found");
+				
 
 
 
