@@ -42,7 +42,7 @@ namespace AlgorithmsAndComplexityAssignment1
             while (values.Contains(userKeyPress));
 			if (values.Contains(userKeyPress))
 			{
-				Console.WriteLine("Found");
+				Console.WriteLine("Value Found");
 				Console.ReadLine();
 			}
 			else
