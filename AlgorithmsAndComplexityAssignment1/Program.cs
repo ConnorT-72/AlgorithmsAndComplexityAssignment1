@@ -13,37 +13,40 @@ namespace AlgorithmsAndComplexityAssignment1
 
 		public static void Main(string[] args)
 		{
-			Random random = new Random();
 
-			//Make a random list of unsorted values and list them
-			int[] values = new int[10];
-			Console.WriteLine("Unsorted:");
-			for (int i = 0; i < values.Length; i++)
-			{
-				values[i] = random.Next(1, 100);
-				Console.WriteLine(values[i]);
-			}
-			//Bubble Sorting
+			string[] lines = File.ReadAllLines("c:\\2981757.txt");
+			//add open with txt files
+			int[] values = new int[465];
+			Console.WriteLine("Not sorted:");
+		
+			
+
+
+
+
+
+			//bubble Sorting
 			int[] bubbled = Sort.bubble(values);
 			Console.WriteLine("Bubble Sorted:");
 			for (int i = 0; i < bubbled.Length; i++)
 			{
 				Console.WriteLine(bubbled[i]);
 			}
+			//sort into every 10th value 
 			int[] selected = Sort.selection(values);
-			Console.WriteLine("Selection Sorted:");
+			Console.WriteLine("Sorted:");
 			for (int i = 0; i < selected.Length; i++)
 			{
 				Console.WriteLine(selected[i]);
 			}
-			//Insertion sorting
+			//Insert sorting
 			int[] inserted = Sort.insertion(values);
 			Console.WriteLine("Insertion Sorted:");
 			for (int i = 0; i < inserted.Length; i++)
 			{
 				Console.WriteLine(bubbled[i]);
 			}
-			//keep the console open :P
+			
 			Console.ReadLine();
 		}
 

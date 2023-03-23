@@ -53,7 +53,6 @@ namespace AlgorithmsAndComplexityAssignment1
 				int index = array[i];
 				int j = i;
 				
-				
 				while ((j > 0) && (array[j - 1] > index))
 				{
 					array[j] = array[j - 1];
